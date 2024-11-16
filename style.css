@@ -1,0 +1,109 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+.header {
+    height:100px;
+    border-bottom: 2px solid rgb(144, 69, 133);
+}
+
+.navbar {
+    background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
+    font-family: "Edu AU VIC WA NT Pre", cursive; 
+}
+
+.nav-link {
+    color:rgb(144, 69, 133) !important ;
+    justify-content: space-around;
+}
+a {
+    position: relative;
+}
+a::after {
+    content:"";
+    position:absolute;
+    background-color: rgb(144, 69, 133);
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition:0.3s;
+}
+a:hover {
+    color:rgb(2, 21, 141);
+}
+a:hover::after {
+    width:100%;
+}
+
+.main-font {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+p{
+    font-family: "Oswald", sans-serif;
+}
+h2{
+    font-family: "Edu AU VIC WA NT Pre", cursive; 
+    font-weight:bold;
+    color:rgb(145, 75, 142);
+}
+.main-body {
+    background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
+}
+
+ /* MAIN BODY SETUP */
+
+.background-cover{
+    background-image: url(./Image/background-cover.jpg);
+    background-size: cover;                                 /*Adding herosection, palcing photo as background */
+    background-repeat: no-repeat; 
+    min-height:60vh; 
+    position:relative;
+}
+/* F00TER SETUP */
+
+.footer-rest {
+    border-top: 2px solid rgb(144, 69, 133);
+    height: 15vh;
+    width: 100%;
+    background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
+  }
+.footer-text {
+    color:rgb(144, 69, 133) !important
+  }
+
+  /* EVENT PAGE */
+
+.card-body {
+    background-image:  linear-gradient(to right, black,  rgb(62, 8, 17));
+}
+.card-title {
+    color: aliceblue;
+}
+.card-text {
+    color: aliceblue;
+}
+.card-btn {
+    background-color:   rgb(144, 69, 133);
+    color: aliceblue;
+    font-weight: bolder;
+}
+.event-date {
+    display: flex;
+    flex-direction: row;
+
+}
+
+  /* ADDING MEDIA QUERY */
+
+ /* @media (max-width:768px) 
+  {
+ .background-cover {
+    min-height:30vh;
+    }
+  }
