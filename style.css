@@ -13,6 +13,10 @@
     font-family: "Edu AU VIC WA NT Pre", cursive; 
 }
 
+.bgnav {
+  background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
+}
+
 .nav-link {
     color:rgb(144, 69, 133) !important ;
     justify-content: space-around;
