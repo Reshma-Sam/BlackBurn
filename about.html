@@ -7,7 +7,7 @@
 
   <title>About Us</title>
 
-  <!--Adding logo on ttile bar-->  
+  <!--Adding logo on ttile bar-->
   <link rel="website icon" type="png" href="./Image/Logo.png">
   <!--Linking Bootstrap CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,8 +21,9 @@
   <!--Font Family Adding Links-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Oswald:wght@200..700&display=swap" 
-  rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
 
 </head>
 
@@ -56,16 +57,133 @@
         </ul>
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><span></span><b> Log In </b></a>
+            <button type="button" class="login-Button">Log
+              In</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="main-font">
+  <main class="main-font main-body">
 
-    </main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="carousel slide" id="carouselDemo" data-bs-wrap="true" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active c-item" data-bs-interval="2000">
+                <img class=" w-100 c-image" src="./Image/party2.avif" alt="First slide">
+              </div>
+              <div class="carousel-item c-item" data-bs-interval="1000">
+                <img class=" w-100 c-image" src="./Image/party7.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item c-item" data-bs-interval="1000">
+                <img class=" w-100 c-image" src="./Image/party3.avif" alt="Third slide">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 pt-5">
+          <h2 class="text-center">Our Story</h2>
+          <p class="text-center pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto
+            laudantium harum odit quod aspernatur quos
+            temporibus fugiat aut molestias a obcaecati ipsum velit porro possimus, eaque doloremque perspiciatis
+            maxime!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro necessitatibus iste maxime odit
+            reprehenderit nostrum vero animi ipsum hic veritatis reiciendis minus, itaque esse!
+            Facere debitis quasi laborum velit. Facilis.</p>
+          <br>
+          <center>
+            <button type="button" class="Submit-Button">Follow us</button>
+          </center>
+        </div>
+      </div>
+
+      <section class="main-body">
+        <div class="container py-5">
+          <h2 class="text-center font-colour"><b>We Are Different</b></h2>
+          <div class="row pt-5">
+            <div class="col-md-6 col-lg-4">
+              <img src="./Image/feature1.png" class="image-feature mx-auto d-block">
+              <h5 class="text-center pt-3">Innovation</h5>
+              <p class="font-colour text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
+                possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, expedita. </p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img src="./Image/feature2.png" class="image-feature mx-auto d-block" alt="loaction icon">
+              <h5 class="text-center pt-3">Collaboration</h5>
+              <p class="font-colour text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, a?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, adipisci.</p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <img src="./Image/feature3.png" class="image-feature mx-auto d-block" alt="loaction icon">
+              <h5 class="text-center pt-3">Customer Support</h5>
+              <p class="font-colour text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+                velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, distinctio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-center">Our Mission</h2>
+        <div class="row pt-2">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 pt-4">
+          <p class="text-center pt-3 mission-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto
+            laudantium harum odit quod aspernatur quos
+            temporibus fugiat aut molestias a obcaecati ipsum velit porro possimus, eaque doloremque perspiciatis
+            maxime!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro necessitatibus iste maxime odit
+            reprehenderit nostrum vero animi ipsum hic veritatis reiciendis minus, itaque esse!
+            Facere debitis quasi laborum velit. Facilis.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 pt-4">
+          <img src="./Image/mission.jpg" class="mission mx-auto d-block" alt="mission-image">
+      </div>
+      </section>
+
+      <section class="main-body">
+        <div class="container py-5">
+          <h2 class="text-center font-colour"><b>Meet The Minds Behind The Magic</b></h2>
+          <div class="row pt-5">
+            <div class="col-md-6 col-lg-3">
+              <img src="./Image/member1.jpg" class="image-member mx-auto d-block">
+              <h5 class="text-center pt-3">Marry Thomas</h5>
+              <p class="font-colour text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
+                possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, expedita. </p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./Image/member2.jpg" class="image-member mx-auto d-block" alt="loaction icon">
+              <h5 class="text-center pt-3">Francis John</h5>
+              <p class="font-colour text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, a?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, adipisci.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./Image/member3.jpg" class="image-member mx-auto d-block" alt="loaction icon">
+              <h5 class="text-center pt-3">Stephen Denny</h5>
+              <p class="font-colour text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+                velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, distinctio.</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <img src="./Image/member4.jpg" class="image-member mx-auto d-block" alt="loaction icon">
+              <h5 class="text-center pt-3">Ann Sebastein</h5>
+              <p class="font-colour text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
+                velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, distinctio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  </main>
 
   <!--Footer Setup-->
 

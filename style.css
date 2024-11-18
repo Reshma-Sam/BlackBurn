@@ -2,14 +2,12 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: "Edu AU VIC WA NT Pre", cursive;
+    letter-spacing: 0.5px;
 }
-
 .header {
-    height:100px;
-    border-bottom: 2px solid rgb(144, 69, 133);
+  height:100px;
+  border-bottom: 2px solid rgb(144, 69, 133);
 }
-
 .navbar {
     background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
     font-family: "Edu AU VIC WA NT Pre", cursive; 
@@ -46,41 +44,81 @@ a:hover::after {
 }
 p{
     font-family: "Oswald", sans-serif;
+    color: aliceblue;
 }
+
 h2{
     font-family: "Edu AU VIC WA NT Pre", cursive; 
     font-weight:bold;
     color:rgb(145, 75, 142);
+    word-spacing: 10px;
+}
+h5{
+    color:rgb(145, 75, 142) ;
 }
 .main-body {
     background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
 }
-
- /* MAIN BODY SETUP */
-
-.background-cover{
-    background-image: url(./Image/background-cover.jpg);
-    background-size: cover;                                 /*Adding herosection, palcing photo as background */
-    background-repeat: no-repeat; 
-    min-height:60vh; 
-    position:relative;
+.login-Button {
+  background-color: rgb(144, 69, 133);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width:100px;
 }
+
+.login-Button:hover {
+  background-color:rgb(94, 8, 81);
+}
+
+ /* HOME PAGE SETUP */
+
+ /*Adding jumbotron on home page*/
+
+.jumbotron{                      
+    background-image: linear-gradient(to bottom, black,  rgb(62, 8, 17));
+}
+h1 {
+  font-family: "Doto", sans-serif;
+  color:rgb(145, 75, 142);
+  font-size: 50px;
+  letter-spacing: 0.5px;
+}
+/* end of jumbotron */
+
+.carousel-event-h {
+    color: aliceblue;
+    font-family: "Edu AU VIC WA NT Pre", cursive; 
+}
+.c-item-index{
+  height: 500px;
+}
+.c-image-index{
+  height:100%;
+}
+
 /* F00TER SETUP */
 
 .footer-rest {
+    background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
     border-top: 2px solid rgb(144, 69, 133);
     height: 15vh;
-    width: 100%;
-    background-image: linear-gradient(to right, black,  rgb(62, 8, 17));
+    width: 100%;   
   }
 .footer-text {
-    color:rgb(144, 69, 133) !important
+    color:rgb(144, 69, 133) !important;
+    
   }
 
   /* EVENT PAGE */
 
 .card-body {
     background-image:  linear-gradient(to right, black,  rgb(62, 8, 17));
+}
+.card-img-top{
+  height: 250px;
 }
 .card-title {
     color: aliceblue;
@@ -96,14 +134,141 @@ h2{
 .event-date {
     display: flex;
     flex-direction: row;
-
+    justify-content:space-evenly;
+    flex:1;
 }
 
+.p-card {
+color: aliceblue;
+}
+
+/* ABOUT PAGE SETUP */
+
+.c-item{
+  height:350px;
+}
+.c-image{
+  height:100%;
+}
+.card-img-top-features {
+  height:100px;
+  width: 100px;
+}
+.image-feature {
+  height:90px;
+  width: 90px;
+}
+.image-member {
+  height:175px;
+  width: 225px;
+  border-radius: 50%;
+}
+
+.mission {
+  height:250px;
+  width: 450px;
+  border-radius: 200px;
+}
+.mission-font {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  letter-spacing:1px;
+  word-spacing: 5px ;
+}
+
+/* CONTACT PAGE SETUP */
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid  rgb(144, 69, 133);
+    border-radius: 4px;
+    resize: vertical;
+    background-image:  linear-gradient(to right, black,  rgb(62, 8, 17));
+    color:rgb(144, 69, 133);
+  }
+  input[type=date],[type=mob] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid  rgb(144, 69, 133);
+    border-radius: 4px;
+    resize: vertical;
+    background-image:  linear-gradient(to right, black,  rgb(62, 8, 17));
+    color:rgb(144, 69, 133);
+  }
+  
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color:rgb(144, 69, 133);
+  }
+  ::placeholder {
+    color: rgb(134, 95, 128);
+  }
+.Submit-Button {
+    background-color: rgb(144, 69, 133);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:150px;
+  }
+  
+  .Submit-Button:hover {
+    background-color:rgb(94, 8, 81);
+  }
+.container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* MODAL SETUP */
+
+.modal-bg {
+  
+  background-image: linear-gradient(to right, rgb(144, 69, 133),   rgb(92, 28, 82));
+}
+.modal-text {
+  color: rgb(62, 8, 17);
+}
+.modal-button {
+    background-color: rgb(62, 8, 17);
+    color: rgb(144, 69, 133);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width:150px;
+}
+  
   /* ADDING MEDIA QUERY */
 
- /* @media (max-width:768px) 
-  {
- .background-cover {
-    min-height:30vh;
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
     }
   }
+
+ 
